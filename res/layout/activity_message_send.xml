@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView 
+        android:id="@+id/tvto"
+        android:text="To:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+    <Spinner 
+        android:id="@+id/spto"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginBottom="20dp"
+    	android:layout_toEndOf="@+id/tvto"
+        />
+    
+    <TextView 
+        android:id="@+id/tvcontent"
+        android:text="Content:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spto"
+        />
+    
+    <EditText 
+        android:id="@+id/etcontent"
+        android:hint="Type something here..."
+        android:minLines="4"
+        android:maxLines="4"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tvcontent"
+        />
+    
+    <Button 
+        android:id="@+id/btsend"
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etcontent"
+        />
+
+</RelativeLayout>

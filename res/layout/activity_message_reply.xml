@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView 
+        android:id="@+id/tvto"
+        android:text="From: NULL"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+    <TextView 
+        android:id="@+id/tvtocontent"
+        android:text="Hello"
+        android:maxLines="4"
+        android:scrollbars="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/tvto"
+        />
+    
+    <TextView 
+        android:id="@+id/tvfrom"
+        android:text="Reply:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvtocontent"
+        />
+    
+    <EditText 
+        android:id="@+id/etfromcontent"
+        android:hint="Type something here..."
+        android:minLines="4"
+        android:maxLines="4"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tvtocontent"
+        />
+    
+    <Button 
+        android:id="@+id/btsend"
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etfromcontent"
+        />
+
+</RelativeLayout>

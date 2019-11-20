@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <Button 
+        android:id="@+id/btsend"
+        android:text="Send Message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <TextView 
+        android:id="@+id/tvtext"
+        android:text="Total inbox:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btsend"
+        />
+    
+    <TextView 
+        android:id="@+id/tvinbox"
+        android:text="NULL"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btsend"
+        android:layout_toEndOf="@+id/tvtext"
+        />
+    
+    <ListView
+        android:id="@+id/messagelist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvtext"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText 
+        android:id="@+id/etname"
+        android:hint="John Doe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        />
+    
+    <EditText 
+        android:id="@+id/etaddress"
+        android:hint="123 Street"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@+id/etname"
+        />
+    
+    <EditText 
+        android:id="@+id/etemail"
+        android:hint="example@email.com"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@+id/etaddress"
+        />
+    
+    <EditText 
+        android:id="@+id/etphone"
+        android:hint="+62123123123"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@+id/etemail"
+        />
+    
+    <EditText 
+        android:id="@+id/etdob"
+        android:hint="2000-10-12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@+id/etphone"
+        />
+    
+    <Button 
+        android:id="@+id/btsimpan"
+        android:text="Simpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etdob"
+        />
+
+</RelativeLayout>

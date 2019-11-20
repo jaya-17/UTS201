@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView 
+        android:id="@+id/tvname"
+        android:text="Who am I"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        />
+    
+    <TextView 
+        android:id="@+id/tvaddressl"
+        android:text="Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvname"
+        />
+    
+    <TextView 
+        android:id="@+id/tvaddressv"
+        android:text="Hello World Street"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvaddressl"
+        android:layout_marginBottom="16dp"
+        />
+    
+    <TextView 
+        android:id="@+id/tvemaill"
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvaddressv"
+        />
+    
+    <TextView 
+        android:id="@+id/tvemailv"
+        android:text="email@example.com"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvemaill"
+        android:layout_marginBottom="16dp"
+        />
+    
+    <TextView 
+        android:id="@+id/tvphonel"
+        android:text="Phone Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvemailv"
+        />
+    
+    <TextView 
+        android:id="@+id/tvphonev"
+        android:text="+621233123123"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvphonel"
+        android:layout_marginBottom="16dp"
+        />
+    
+    <TextView 
+        android:id="@+id/tvdobl"
+        android:text="Date of Birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvphonev"
+        />
+    
+    <TextView 
+        android:id="@+id/tvdobv"
+        android:text="1945-08-17"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdobl"
+        />
+
+</RelativeLayout>
